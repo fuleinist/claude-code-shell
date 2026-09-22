@@ -1,0 +1,36 @@
+{
+  "name": "claude-code-shell",
+  "version": "0.1.0",
+  "description": "Pipe any terminal output or file into Claude Code for analysis — cat error.log | claude-analyze, without leaving your terminal.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "claude-analyze": "dist/cli.js",
+    "ccs": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "cli",
+    "pipe",
+    "ai",
+    "logs",
+    "analysis"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}
